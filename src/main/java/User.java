@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class User {
@@ -38,11 +39,11 @@ public class User {
 
 
     private void setPassword(String password) {
-        this.password = password;
+        Utils en = new Utils();
+        this.password = en.encryption(password);
     }
 
     public User getUserId(String Phone, List<User> Users) {
-
         return null;
     }
 
